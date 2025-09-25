@@ -1,0 +1,31 @@
+
+main{
+    background-color:  #fff0c4;
+    color:  #660b05 ;
+    padding-bottom:40px ;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#myImage{
+    height: 15rem;
+    background-position: end;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #3E0703;
+}
+ul,h2{
+    margin-left: 40px;
+    line-height: 30px;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color:  #3E0703;
+    color:#fff0c4 ;
+    border-top: 6px solid black;
+}
+
+main ul{
+    margin-right: 40px;
+    border-bottom: 2px solid #3E0703;
+}
