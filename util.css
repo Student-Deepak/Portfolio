@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,7 +46,7 @@ li{
    list-style-type: square;
 }
 .bg_white{
-   color: #fff0c4;
+   color: #d7d7d7;
 }
 .bg_red{
     color: #660b05;
@@ -100,4 +104,11 @@ footer{
 }
 .margin5{
     margin: 2rem;
+}
+.box{
+    border: 2px solid #660b05;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -5px 10px 10px black;
 }
