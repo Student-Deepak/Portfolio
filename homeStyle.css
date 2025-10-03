@@ -20,13 +20,13 @@
     border: 2px solid black;
     scale: 0.95;
 }
-pre{
+#hint{
     font-size: 60px;
     font-weight: 700;
 }
 .button{
     line-height: 6rem;
-    margin-left: 15rem;
+    /* margin-left: 15rem; */
 }
 .button p{
     font-size: 2rem;
