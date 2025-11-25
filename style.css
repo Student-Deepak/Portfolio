@@ -1,8 +1,10 @@
+html{
+box-sizing: border-box;
+ scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 ::-webkit-scrollbar {
@@ -47,12 +49,16 @@ header ul li:first-child{
 }
  /* main body */
  /* intro section styling */
+ main{
+    width: 100%;
+ }
 .intro{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 4rem;
     padding: 3rem;
+    width: 100%;
 }
 .intro div{
     height: 50%;
@@ -132,6 +138,7 @@ header ul li:first-child{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* width: 100%; */
 }
 .project-box a{
     text-decoration: none;
@@ -171,6 +178,7 @@ footer{
     color: #000;
     box-shadow: 0px -2px 8px rgba(25, 23, 26, 0.411);
     margin-top: 3rem;
+    width: 100%;
 }
 .social-media{
     display: flex;
@@ -197,4 +205,26 @@ footer p{
     padding-top: 1.3rem;
     margin:0 2rem 2rem 2rem;
     border-top: 2px solid #000;
+}
+
+/* responsiveness */
+@media (max-width: 1000px){
+    .intro{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro div{
+        width: 80%;
+        height: auto;
+    }
+    .intro-image img{
+        width: 50%;
+        margin: 0 auto 1rem auto;
+    }
+    .project-box{
+        flex-direction: column;
+    }
+    .project-card{
+        margin-bottom: 2rem;
+    }
 }
