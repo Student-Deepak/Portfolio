@@ -5,70 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="homeStyle.css">
-    <link rel="stylesheet" href="util.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="flexbox space_arround center">
-        <h1 class="bg_white"> <i class="fa-solid fa-house margin_right"></i>Home</h1>
-        <ul class="flexbox space_evenly">
-            <li><a href="resume.html" class="bg_white">Resume</a></li>
-            <li><a href="contact.html" class="bg_white">Contact</a></li>
-            <li><a href="project.html" class="bg_white">Project</a></li>
+    <!-- header of this project -->
+
+    <header>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
+
+    <!-- main content of this project -->
     <main>
-        <div class="flexbox margin20 box space_between" id="imgContainer">
-            
-            <img src="me.jpg" alt="My image" class="firstImage MyImage">
-            
-            <div>
-                <p id="hint">
-                   Welcome to <br>
-                    My Design <br>
-                     Portfolio
-                </p>
-                <div class="button">
-                    <button class="btn"> Deepak | Web Developer</button>
-                    <p><a href="contact.html" class="bg_red">Work with me</a></p>
-                </div>
+        <!-- introduction section -->
+        <section class="intro" id="portfolio">
+            <div class="intro-image"><img src="me.jpg" alt="My image"></div>
+            <div class="intro-para"> Welcome to <br> My Design <br>Portfolio</div>
+        </section>
+        <section class="about">
+            <h1>Who I am</h1>
+            <p>Hello! I&apos;m Deepak, a passionate and creative <strong> Web Developer. <br> </strong>I enjoy building
+                impactful digital solutions that combine functionality with aesthetics.</p>
+
+        </section>
+        <section id="resume">
+            <h1 class="resume-main-heading">My Resume</h1>
+            <section class="skill resume-box">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JAVA</li>
+                    <li>MERN STACK</li>
+                    <li>C,C++</li>
+            </section>
+            <section class="education resume-box">
+                <h2>Education</h2>
+                <ul>
+                    <li>MCA from KIET GROUP OF INSTITUTION,GHAZIABAD</li>
+                    <li>BCA from MSU SAHARANPUR <span>73&percnt;</span></li>
+                    <li>X UPBOARD <span>84.3&percnt;</span></li>
+                    <li>XII UPBOARD <span>80.2&percnt;</span></li>
+                </ul>
+            </section>
+            <section class="experience resume-box">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Fresher level</li>
+                    <li>Internship</li>
+                </ul>
+            </section>
+            <section class="hobbies resume-box">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Listening Music</li>
+                    <li>Deep concept learning</li>
+
+                </ul>
+            </section>
+        </section>
+        <section id="project">
+            <h1 class="project-main-heading">My Projects</h1>
+            <div class="project-box">
+                <a href="#">
+                    <div class="project-card">
+                        <img src="spotify.png" alt="spotify clone">
+                        <p>Spotify Clone</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project-card">
+                        <img src="simon.png" alt="symon game">
+                        <p>Simon Game</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project-card">
+                        <img src="vestro.png" alt="e-commerce website">
+                        <p>E-commerce Website</p>
+                    </div>
+                </a>
             </div>
-        </div>
-
-        <div class="line_height intro box">
-            <h1 class="font3x">Who I am</h1>
-            <p class="font2x">Hello! I&apos;m Deepak, a passionate and creative <strong> Web Developer. <br> </strong>I enjoy building
-                impactful digital solutions that <br> combine functionality with aesthetics.</p>
-        </div>
-        <div class="box">
-            <h1 class="work">My works</h1>
-            <p></p>
-        </div>
-
-        <div class="border"></div>
+        </section>
     </main>
-    
-    <footer class="padding10">
-        <div class="flexbox space_arround">
-            <ul class="margin_top line_height">
-                <h2 class="bg_white">Useful links</h2>
-                <li><a href="" class="bg_white">first link</a></li>
-                <li><a href="" class="bg_white">second link</a></li>
-                <li><a href="" class="bg_white">third link</a></li>
-                <li><a href="" class="bg_white">forth link</a></li>
-                <li><a href="" class="bg_white">fifth link</a></li>
-            </ul>
-            <ul class="flexbox margin_top">
-                <div class="socialIcon margin5"><a href="https://www.facebook.com/profile.php?id=100014208702085"><i class="fa-brands fa-facebook"></i></a></div>
-                <div class="socialIcon margin5"><a href="https://www.linkedin.com/in/deepak-saloniya-195271309/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="socialIcon margin5"><a href="https://github.com/Student-Deepak?tab=repositories"><i class="fa-brands fa-github"></i></a></div>
-            </ul>
-        </div>
-        <div class="margin10">
-            <p class="bg_white">Last update 2025</p>
-        </div>
+
+    <footer>
+        <section id="contact">
+            <h1 class="contact-main-heading">Connect With Me<h1>
+                    <div class="social-media">
+                        <div class="linkedin social-icon"><a href="https://www.linkedin.com/in/deepak-saloniya-195271309/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a></div>
+                        <div class="github social-icon"><a href="https://github.com/Student-Deepak?tab=repositories"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="email social-icon"><a href="mailto: blackheart397562@gmail.com"><i class="fa-regular fa-message"></i></a></div>
+                    </div>
+                    <div class="social-media">
+                        <div class="instagram social-icon"><a href="https://www.instagram.com/_prj_deepak/"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="facebook social-icon"><a href="https://www.facebook.com/profile.php?id=100014208702085"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="twiter social-icon"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></div>
+                    </div>
+
+        </section>
+        <p class="last-para">❤️ Last Update December 2025</p>
     </footer>
 
 </body>
